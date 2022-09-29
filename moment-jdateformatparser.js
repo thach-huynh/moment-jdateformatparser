@@ -10,7 +10,7 @@
     // this does not work with strict CommonJS, but only CommonJS-like environments
     // whicht support `module.exports`, like node.js does
     try {
-      module.exports = factory(require('moment'));
+      module.exports = factory(require('moment-timezone'));
     } catch (ignore) {
       // if `moment.js` is not available, leave the setup to the user;
       // this is necessary if the user works with other plugins which will
